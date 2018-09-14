@@ -12,5 +12,4 @@ export class ShortenPipe implements PipeTransform {
     else
       return value;
   }
-
 }

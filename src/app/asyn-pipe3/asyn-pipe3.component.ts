@@ -8,7 +8,7 @@ import { map, take } from 'rxjs/operators';
   templateUrl: './asyn-pipe3.component.html',
   styleUrls: ['./asyn-pipe3.component.css']
 })
-export class AsynPipe3Component implements OnInit, OnDestroy {
+export class AsynPipe3Component implements OnDestroy {
   observableData: number;
   subscription: Subscription = null;
 
@@ -29,8 +29,5 @@ export class AsynPipe3Component implements OnInit, OnDestroy {
     if (this.subscription) {
       this.subscription.unsubscribe();
     }
-  }
-
-  ngOnInit() {
   }
 }

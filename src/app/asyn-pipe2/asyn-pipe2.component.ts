@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './asyn-pipe2.component.html',
   styleUrls: ['./asyn-pipe2.component.css']
 })
-export class AsynPipe2Component implements OnInit {
+export class AsynPipe2Component {
   promise: Promise<any>;
 
   constructor() {
@@ -16,8 +16,5 @@ export class AsynPipe2Component implements OnInit {
     return new Promise((resolve, reject) => {
       setTimeout(() => resolve('Promise zavrsen!'), 3000);
     });
-  }
-
-  ngOnInit() {
   }
 }

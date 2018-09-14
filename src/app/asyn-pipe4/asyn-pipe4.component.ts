@@ -7,7 +7,7 @@ import { map, take } from 'rxjs/operators';
   templateUrl: './asyn-pipe4.component.html',
   styleUrls: ['./asyn-pipe4.component.css']
 })
-export class AsynPipe4Component implements OnInit {
+export class AsynPipe4Component {
   observable: Observable<number>;
 
   constructor() {
